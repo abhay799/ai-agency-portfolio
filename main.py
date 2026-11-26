@@ -32,7 +32,7 @@ async def agency_hub():
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{AGENCY_NAME} — Production AI Agents for Indian Businesses</title>
+  <title>{AGENCY_NAME} — Practical AI Agents for Indian Businesses</title>
   <style>
     :root {{
       --bg: #090d16;
@@ -110,7 +110,7 @@ async def agency_hub():
 
     /* Pricing */
     .pricing {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 14px; margin-bottom: 44px; }}
-    .p-card {{ background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }}
+    .p-card {{ background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; }}
     .p-card.featured {{ border: 2px solid var(--accent); position: relative; }}
     .p-title {{ font-size: 14px; font-weight: 700; color: #60a5fa; text-transform: uppercase; }}
     .p-price {{ font-size: 26px; font-weight: 800; margin: 8px 0 4px; }}
@@ -124,24 +124,24 @@ async def agency_hub():
   <nav class="nav">
     <div class="nav-inner">
       <div class="brand"><span class="brand-badge">AI</span> {AGENCY_NAME}</div>
-      <a class="nav-cta" href="#pricing">Pricing &amp; Pilot</a>
+      <a class="nav-cta" href="#pricing">Plans from ₹4,999</a>
     </div>
   </nav>
 
   <main class="container">
     <section class="hero">
       <div class="pill">● Live Production Demos &bull; Built in Bengaluru for Indian Businesses</div>
-      <h1>Replace Repetitive Support, Sales &amp; Ops Work with Autonomous AI Agents</h1>
-      <p>Test 10 live AI workflows right in your browser—complete with tool calling, GST validation, CRM sync, and 1-line website embedding. Deployed in 5–7 days.</p>
+      <h1>Automate Repetitive Support, Leads &amp; Daily Ops Starting at ₹4,999</h1>
+      <p>Test 10 live AI workflows right in your browser—complete with tool calling, GST validation, CRM sync, and 1-line website embedding. Live for your business in 3–5 days.</p>
       <div class="hero-btns">
         <a href="#demos" class="btn-primary">Test Live AI Demos ↓</a>
-        <button class="btn-secondary" onclick="bookAudit('General AI Workflow Audit')">Book Free 15-Min Audit</button>
+        <button class="btn-secondary" onclick="bookAudit('Free 15-Min AI Workflow Audit')">Book Free 15-Min Demo</button>
       </div>
 
       <div class="stats">
         <div class="stat-card"><div class="stat-num">10 Workflows</div><div class="stat-lbl">Live &amp; Interactive</div></div>
-        <div class="stat-card"><div class="stat-num">5–7 Days</div><div class="stat-lbl">Custom Deployment</div></div>
-        <div class="stat-card"><div class="stat-num">₹25k–₹1.2L</div><div class="stat-lbl">Fixed Setup Pricing</div></div>
+        <div class="stat-card"><div class="stat-num">3–5 Days</div><div class="stat-lbl">Custom Setup</div></div>
+        <div class="stat-card"><div class="stat-num">₹4,999</div><div class="stat-lbl">Starter Pilot Setup</div></div>
         <div class="stat-card"><div class="stat-num">99.9% Uptime</div><div class="stat-lbl">Multi-Model Fallback</div></div>
       </div>
     </section>
@@ -164,7 +164,7 @@ async def agency_hub():
         <!-- #1 & #2 -->
         <div class="card" data-cat="d2c">
           <div>
-            <div class="card-top"><span class="tag">#1 &amp; #2 &bull; D2C &amp; WhatsApp Support</span><span class="price-pill">₹25k–₹45k</span></div>
+            <div class="card-top"><span class="tag">#1 &amp; #2 &bull; D2C &amp; WhatsApp Support</span><span class="price-pill">₹4,999 Setup</span></div>
             <h3>VastraVibe D2C Support &amp; Returns Agent</h3>
             <p>Resolves WISMO order tracking, 7-day reverse pickups, COD policies, and escalates priority tickets 24/7.</p>
             <ul class="bullets">
@@ -182,7 +182,7 @@ async def agency_hub():
         <!-- #3, #4, #5 -->
         <div class="card" data-cat="growth">
           <div>
-            <div class="card-top"><span class="tag">#3 + #4 + #5 &bull; Revenue Engine</span><span class="price-pill">₹35k–₹65k</span></div>
+            <div class="card-top"><span class="tag">#3 + #4 + #5 &bull; Revenue Engine</span><span class="price-pill">₹11,999 Setup</span></div>
             <h3>Lead-to-CRM-to-Appointment AI Agent</h3>
             <p>Captures inbound inquiries, scores buyer intent (0–100), updates CRM stages, and books calendar slots.</p>
             <ul class="bullets">
@@ -200,7 +200,7 @@ async def agency_hub():
         <!-- #7 -->
         <div class="card" data-cat="ops">
           <div>
-            <div class="card-top"><span class="tag">#7 &bull; Finance &amp; GST Audit</span><span class="price-pill">₹30k–₹60k</span></div>
+            <div class="card-top"><span class="tag">#7 &bull; Finance &amp; GST Audit</span><span class="price-pill">₹7,999 Setup</span></div>
             <h3>BillGuard GST Invoice &amp; 3-Way PO Auditor</h3>
             <p>Extracts vendor GSTIN, taxable base, CGST/SGST/IGST, and catches PO overcharges before payout.</p>
             <ul class="bullets">
@@ -211,14 +211,14 @@ async def agency_hub():
           </div>
           <div class="card-actions">
             <a class="btn-live" href="{DEMO_URLS['invoice']}" target="_blank">Launch Live Demo ↗</a>
-            <button class="btn-embed" onclick="bookAudit('BillGuard GST Invoice AI')">Request Custom</button>
+            <button class="btn-embed" onclick="bookAudit('BillGuard GST Invoice AI (₹7,999)')">Request Custom</button>
           </div>
         </div>
 
         <!-- #10 -->
         <div class="card" data-cat="hr">
           <div>
-            <div class="card-top"><span class="tag">#10 &bull; Recruitment &amp; ATS</span><span class="price-pill">₹25k–₹50k</span></div>
+            <div class="card-top"><span class="tag">#10 &bull; Recruitment &amp; ATS</span><span class="price-pill">₹5,999 Setup</span></div>
             <h3>HirePulse AI Resume Screener &amp; L1 Scheduler</h3>
             <p>Scores candidate resumes (0–100) against job roles, checks LPA/notice fit, and books Google Meet L1s.</p>
             <ul class="bullets">
@@ -229,14 +229,14 @@ async def agency_hub():
           </div>
           <div class="card-actions">
             <a class="btn-live" href="{DEMO_URLS['recruit']}" target="_blank">Launch Live Demo ↗</a>
-            <button class="btn-embed" onclick="bookAudit('HirePulse Recruitment AI')">Request Custom</button>
+            <button class="btn-embed" onclick="bookAudit('HirePulse Recruitment AI (₹5,999)')">Request Custom</button>
           </div>
         </div>
 
         <!-- #6 -->
         <div class="card" data-cat="ops">
           <div>
-            <div class="card-top"><span class="tag">#6 &bull; Inbox &amp; Sales Ops</span><span class="price-pill">₹25k–₹45k</span></div>
+            <div class="card-top"><span class="tag">#6 &bull; Inbox &amp; Sales Ops</span><span class="price-pill">₹4,999 Setup</span></div>
             <h3>ApexMail B2B Email Triage &amp; Auto-Reply</h3>
             <p>Classifies incoming B2B quotes, logistics escalations, and vendor bills, routing tasks and drafting replies.</p>
             <ul class="bullets">
@@ -247,14 +247,14 @@ async def agency_hub():
           </div>
           <div class="card-actions">
             <a class="btn-live" href="{DEMO_URLS['email']}" target="_blank">Launch Live Demo ↗</a>
-            <button class="btn-embed" onclick="bookAudit('ApexMail Email AI')">Request Custom</button>
+            <button class="btn-embed" onclick="bookAudit('ApexMail Email AI (₹4,999)')">Request Custom</button>
           </div>
         </div>
 
         <!-- #8 & #9 -->
         <div class="card" data-cat="ops">
           <div>
-            <div class="card-top"><span class="tag">#8 &amp; #9 &bull; ERP Workflows &amp; MIS</span><span class="price-pill">₹40k–₹85k</span></div>
+            <div class="card-top"><span class="tag">#8 &amp; #9 &bull; ERP Workflows &amp; MIS</span><span class="price-pill">₹9,999 Setup</span></div>
             <h3>FlowOps Orchestrator &amp; PulseBoard MIS AI</h3>
             <p>Automates COD RTO checks, dark-store stock transfers, and daily P&amp;L / ROAS anomaly reports.</p>
             <ul class="bullets">
@@ -275,7 +275,7 @@ async def agency_hub():
     <section class="roi-box">
       <div class="sec-head">
         <h2>Client ROI &amp; Team Hours Saved Calculator</h2>
-        <p>Estimate monthly operational savings before starting a 5-day pilot.</p>
+        <p>Estimate monthly operational savings before starting a ₹4,999 pilot.</p>
       </div>
       <div class="roi-grid">
         <div>
@@ -296,7 +296,7 @@ async def agency_hub():
           <div style="font-size:12px;color:#94a3b8;text-transform:uppercase;font-weight:700;">Estimated Monthly Savings (80% Automated)</div>
           <div class="roi-big" id="saveMoney">₹72,000 / mo</div>
           <div style="font-size:13px;color:#cbd5e1;" id="saveHours">288 manual hours reclaimed every month</div>
-          <button class="btn-primary" style="margin-top:12px;width:100%;" onclick="bookAudit('Custom ROI Pilot')">Claim Free Workflow Audit</button>
+          <button class="btn-primary" style="margin-top:12px;width:100%;" onclick="bookAudit('Starter Pilot (₹4,999)')">Start ₹4,999 Pilot Today</button>
         </div>
       </div>
     </section>
@@ -304,47 +304,53 @@ async def agency_hub():
     <!-- Pricing -->
     <section id="pricing">
       <div class="sec-head">
-        <h2>Transparent Implementation Packages (INR)</h2>
-        <p>Start with a single high-ROI workflow in 5 days—no bloated multi-month retainers.</p>
+        <h2>Practical Indian Business Packages (INR)</h2>
+        <p>Low upfront setup with optional monthly hosting &amp; API care—built for fast ROI.</p>
       </div>
       <div class="pricing">
         <div class="p-card">
-          <div class="p-title">Starter Pilot</div>
-          <div class="p-price">₹25,000</div>
-          <div class="p-sub">One-time setup &bull; Delivered in 5 days</div>
-          <ul class="bullets">
-            <li>1 Custom AI Agent (Support, Lead Bot, or ATS Screener)</li>
-            <li>Trained on your exact catalog, SOPs &amp; INR pricing</li>
-            <li>Web widget + WhatsApp / API webhook ready</li>
-            <li>14 days post-launch tuning included</li>
-          </ul>
-          <button class="btn-secondary" style="width:100%;" onclick="bookAudit('Starter Pilot (₹25,000)')">Start Starter Pilot</button>
+          <div>
+            <div class="p-title">Starter Pilot</div>
+            <div class="p-price">₹4,999</div>
+            <div class="p-sub">One-time setup &bull; Optional ₹1,499/mo care &amp; hosting</div>
+            <ul class="bullets">
+              <li>1 Custom AI Agent (Support, Lead Bot, Email, or ATS)</li>
+              <li>Trained on your exact catalog, FAQ &amp; INR pricing</li>
+              <li>1-line website chat widget + WhatsApp webhook ready</li>
+              <li>Delivered in 3 days with 14 days support included</li>
+            </ul>
+          </div>
+          <button class="btn-secondary" style="width:100%;" onclick="bookAudit('Starter Pilot (₹4,999)')">Start Starter Pilot</button>
         </div>
 
         <div class="p-card featured">
-          <div class="p-title">Growth Revenue Suite (Most Popular)</div>
-          <div class="p-price">₹55,000</div>
-          <div class="p-sub">One-time setup &bull; Delivered in 7 days</div>
-          <ul class="bullets">
-            <li>Unified Lead Gen + CRM Sync + Calendar Booking Agent</li>
-            <li>Google Sheets / HubSpot / Zoho / WhatsApp integration</li>
-            <li>Multi-model failover engine for zero downtime</li>
-            <li>30 days priority support &amp; prompt optimization</li>
-          </ul>
-          <button class="btn-primary" style="width:100%;" onclick="bookAudit('Growth Revenue Suite (₹55,000)')">Book Growth Suite</button>
+          <div>
+            <div class="p-title">Growth Revenue Suite (Most Popular)</div>
+            <div class="p-price">₹11,999</div>
+            <div class="p-sub">One-time setup &bull; Optional ₹2,499/mo care &amp; hosting</div>
+            <ul class="bullets">
+              <li>Unified Lead Gen + CRM Sync + Appointment Booking Agent</li>
+              <li>Google Sheets / Zoho / HubSpot / WhatsApp integration</li>
+              <li>Multi-model failover engine for 99.9% uptime</li>
+              <li>Delivered in 5 days with 30 days priority tuning</li>
+            </ul>
+          </div>
+          <button class="btn-primary" style="width:100%;" onclick="bookAudit('Growth Revenue Suite (₹11,999)')">Book Growth Suite</button>
         </div>
 
         <div class="p-card">
-          <div class="p-title">Full Operations Stack</div>
-          <div class="p-price">₹1,10,000</div>
-          <div class="p-sub">Custom multi-agent architecture &bull; 10–14 days</div>
-          <ul class="bullets">
-            <li>3+ Integrated Agents (GST Audit + MIS Reports + Support)</li>
-            <li>Custom database, ERP &amp; internal dashboard views</li>
-            <li>Dedicated cloud deployment &amp; role-based access</li>
-            <li>Optional ₹15,000/mo managed SLA &amp; upgrades</li>
-          </ul>
-          <button class="btn-secondary" style="width:100%;" onclick="bookAudit('Full Operations Stack (₹1,10,000)')">Scope Full Stack</button>
+          <div>
+            <div class="p-title">Custom Operations Stack</div>
+            <div class="p-price">₹24,999</div>
+            <div class="p-sub">Multi-agent workflow setup &bull; Optional ₹3,999/mo SLA</div>
+            <ul class="bullets">
+              <li>3+ Integrated Agents (GST Audit + MIS Reports + Support)</li>
+              <li>Custom database, ERP &amp; internal dashboard views</li>
+              <li>Dedicated cloud deployment &amp; role-based access</li>
+              <li>Delivered in 7–10 days with full handover</li>
+            </ul>
+          </div>
+          <button class="btn-secondary" style="width:100%;" onclick="bookAudit('Custom Operations Stack (₹24,999)')">Scope Custom Stack</button>
         </div>
       </div>
     </section>
@@ -385,7 +391,7 @@ async def agency_hub():
     }}
 
     function bookAudit(pkg) {{
-      const msg = encodeURIComponent(`Hi {FOUNDER_NAME}, I tested your AI demos and want to book a 15-min audit for: ${{pkg}}.`);
+      const msg = encodeURIComponent(`Hi {FOUNDER_NAME}, I tested your AI demos and want to get started with: ${{pkg}}.`);
       window.open(`https://wa.me/{WHATSAPP_NUMBER}?text=${{msg}}`, '_blank');
     }}
 
